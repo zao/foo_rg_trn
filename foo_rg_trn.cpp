@@ -305,5 +305,5 @@ rg_override_page::reset()
 static play_callback_static_factory_t<playlist_rg_override_callback> g_callback;
 static preferences_page_factory_t<rg_override_page_impl> g_page;
 
-DECLARE_COMPONENT_VERSION("ReplayGain override", "0.1.3", "Zao");
+DECLARE_COMPONENT_VERSION("ReplayGain override", "0.1.4", "Zao");
 VALIDATE_COMPONENT_FILENAME("foo_rg_trn.dll");
