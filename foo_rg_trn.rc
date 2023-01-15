@@ -1,0 +1,123 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_RGPAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 231
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_RGPAGE DIALOGEX 0, 0, 256, 238
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Replaygain Override Mode",IDC_STATIC,0,6,216,102
+	RTEXT           "default",IDC_D,6,18,90,8
+    RTEXT           "rplist",IDC_RP,6,30,90,8
+    RTEXT           "rtrack",IDC_RT,6,42,90,8
+	RTEXT           "rnd",IDC_RND,6,54,90,8
+    RTEXT           "salbum",IDC_SA,6,66,90,8
+    RTEXT           "sdir",IDC_SD,6,78,90,8
+    RTEXT           "stra",IDC_ST,6,90,90,8
+	CONTROL         "Album",IDC_DAlbum,"Button",BS_AUTORADIOBUTTON | WS_GROUP,102,18,36,10
+    CONTROL         "Track",IDC_DTrack,"Button",BS_AUTORADIOBUTTON,138,18,36,10
+    CONTROL         "None",IDC_DNone,"Button",BS_AUTORADIOBUTTON,174,18,36,10
+    CONTROL         "Album",IDC_RPAlbum,"Button",BS_AUTORADIOBUTTON | WS_GROUP,102,30,36,10
+    CONTROL         "Track",IDC_RPTrack,"Button",BS_AUTORADIOBUTTON,138,30,36,10
+    CONTROL         "None",IDC_RPNone,"Button",BS_AUTORADIOBUTTON,174,30,36,10
+    CONTROL         "Album",IDC_RTAlbum,"Button",BS_AUTORADIOBUTTON | WS_GROUP,102,42,36,10
+    CONTROL         "Track",IDC_RTTrack,"Button",BS_AUTORADIOBUTTON,138,42,36,10
+    CONTROL         "None",IDC_RTNone,"Button",BS_AUTORADIOBUTTON,174,42,36,10
+	CONTROL         "Album",IDC_RNDAlbum,"Button",BS_AUTORADIOBUTTON | WS_GROUP,102,54,36,10
+    CONTROL         "Track",IDC_RNDTrack,"Button",BS_AUTORADIOBUTTON,138,54,36,10
+    CONTROL         "None",IDC_RNDNone,"Button",BS_AUTORADIOBUTTON,174,54,36,10
+	CONTROL         "Album",IDC_SAAlbum,"Button",BS_AUTORADIOBUTTON | WS_GROUP,102,66,36,10
+    CONTROL         "Track",IDC_SATrack,"Button",BS_AUTORADIOBUTTON,138,66,36,10
+    CONTROL         "None",IDC_SANone,"Button",BS_AUTORADIOBUTTON,174,66,36,10
+    CONTROL         "Album",IDC_SDAlbum,"Button",BS_AUTORADIOBUTTON | WS_GROUP,102,78,36,10
+    CONTROL         "Track",IDC_SDTrack,"Button",BS_AUTORADIOBUTTON,138,78,36,10
+    CONTROL         "None",IDC_SDNone,"Button",BS_AUTORADIOBUTTON,174,78,36,10
+    CONTROL         "Album",IDC_STAlbum,"Button",BS_AUTORADIOBUTTON | WS_GROUP,102,90,36,10
+    CONTROL         "Track",IDC_STTrack,"Button",BS_AUTORADIOBUTTON,138,90,36,10
+    CONTROL         "None",IDC_STNone,"Button",BS_AUTORADIOBUTTON,174,90,36,10
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
