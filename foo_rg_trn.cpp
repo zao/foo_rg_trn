@@ -1,5 +1,6 @@
 #include <helpers/foobar2000+atl.h>
 #include <helpers/atl-misc.h>
+#include <helpers/DarkMode.h>
 
 #include "resource.h"
 
@@ -210,6 +211,8 @@ class rg_override_page
 
     bool has_changed();
 
+    fb2k::CDarkModeHooks dark_hooks;
+
     enum
     {
         entry_count = 7
@@ -248,6 +251,7 @@ rg_override_page::rg_override_page(preferences_page_callback::ptr callback)
 BOOL
 rg_override_page::on_init_dialog(CWindow, LPARAM)
 {
+    dark_hooks.AddDialogWithControls(*this);
     static_api_ptr_t<playlist_manager> pm;
 
     for (int i = 0; i < entry_count; ++i) {
@@ -278,7 +282,7 @@ rg_override_page::on_radio_clicked(UINT, int id, CWindow control)
 t_uint32
 rg_override_page::get_state()
 {
-    t_uint32 state = preferences_state::resettable;
+    t_uint32 state = preferences_state::resettable | preferences_state::dark_mode_supported;
     if (has_changed())
         state |= preferences_state::changed;
     return state;
